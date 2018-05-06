@@ -6,16 +6,16 @@ var app= express();
 
 
 if(envLang === 'el_GR'){
-	res.send('<h1> haha</h1>');
 	console.log('Καλως ηρθατε στην ελλαδα!!');
 }else{
 	console.log('Welcome in an english speaking language');
 }
 
+console.log(envLang);
 // app.use(express.static(__dirname+ '/public'));
 
 app.get('/', (req, res)=>{
-	res.send('<h1> Home page</h1>');
+	res.send('<h1> Home pages</h1>');
 });
 
 app.listen(port, () =>{
