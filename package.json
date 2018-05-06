@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "env-lang": "^1.0.0",
     "express": "^4.16.3"
   },
   "devDependencies": {}

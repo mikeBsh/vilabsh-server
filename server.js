@@ -1,11 +1,15 @@
 const express= require('express');
-
+var envLang = require("env-lang");
 
 const port = process.env.PORT || 3000;
 var app= express();
 
 
-
+if(envLang === 'el_GR'){
+	console.log('Καλως ηρθατε στην ελλαδα!!');
+}else{
+	console.log('Welcome in an english speaking language');
+}
 
 // app.use(express.static(__dirname+ '/public'));
 
