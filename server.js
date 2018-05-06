@@ -6,6 +6,7 @@ var app= express();
 
 
 if(envLang === 'el_GR'){
+	res.send('<h1> haha</h1>');
 	console.log('Καλως ηρθατε στην ελλαδα!!');
 }else{
 	console.log('Welcome in an english speaking language');
