@@ -12,7 +12,7 @@ app.get('/', (req, res)=>{
 	if(envLang === 'el_GR'){
 		res.send('<h1> Καλως ηρθατε /h1>');
 	}else{
-		res.send('<h1> welcome english speaking person</h1>');
+		res.send(`<h1> ${envLang}</h1>`);
 	}
 });
 
