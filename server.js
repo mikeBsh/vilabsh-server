@@ -5,17 +5,15 @@ const port = process.env.PORT || 3000;
 var app= express();
 
 
-if(envLang === 'el_GR'){
-	console.log('Καλως ηρθατε στην ελλαδα!!');
-}else{
-	console.log('Welcome in an english speaking language');
-}
-
-console.log(envLang);
 // app.use(express.static(__dirname+ '/public'));
 
 app.get('/', (req, res)=>{
-	res.send('<h1> Home pages</h1>');
+
+	if(envLang === 'el_GR'){
+		res.send('<h1> Καλως ηρθατε /h1>');
+	}else{
+		res.send('<h1> welcome english speaking person</h1>');
+	}
 });
 
 app.listen(port, () =>{
